@@ -4,14 +4,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    state () {
+    state() {
       return {
-        label_id: 1
-      }
-    },
-    mutations: {
-      increment (state) {
-        state.label_id++
+        label_id: 0
       }
     }
 })
