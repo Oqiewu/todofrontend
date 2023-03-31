@@ -5,7 +5,7 @@
         <b-form-input class="new__label__text" type="text" v-model="name" placeholder="Enter your name"></b-form-input>
       </div>
         <b-list-group class="labels__list" flush>
-          <b-list-group-item @click="$root.$emit('label_changed', $event)" href="#" v-for="(label, index) in labels" :key="index" v-bind:id="'label__' + label.id" class="labels__items" flush>
+          <b-list-group-item @click="$root.$emit('label_changed', $event)" button v-for="(label, index) in labels" :key="index" v-bind:id="'label__' + label.id" class="labels__items" flush>
             {{ label.name }}
             <b-button @click="delete_new_label" class="delete__lable_button btn-sm">x</b-button>
           </b-list-group-item>
